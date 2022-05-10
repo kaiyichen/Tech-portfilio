@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <title>Kai Yi Chen's Tech Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header">
+    <nav>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">PORTFOLIO</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+
+    <section class="showcase">
+      <iframe class="video-container" src="https://my.spline.design/calculatorcopy-5680fad5eab37b028ad2c151c7af3bc9/" scrolling="no" frameBorder="0"></iframe>
+
+      <div class="text-box">
+        <a href="#about_me" class="know-more-btn" transition="">Know more about me</a>
+      </div>
+    </section>
+</section>
+
+<!-- About me -->
+<section class="about-me" id="about_me">
+  <h1>About me</h1>
+  <p> I am an undergraduate Computer Science student in National University of Singapore </p>
+
+  <div class="row">
+    <div class ="about-me-col">
+      <h3> Analytical Thinking </h3>
+      <img src="images/analytical.png" width="100px" height="100px">
+      <p> Ability to identify problems and thinking out-of-box</p>
+    </div>
+
+    <div class ="about-me-col">
+      <h3> Detail Oriented </h3>
+      <img src="images/detail.png" width="100px" height="100px">
+      <p> Good at troubleshooting software under development</p>
+    </div>
+
+    <div class ="about-me-col">
+      <h3> Creative </h3>
+      <img src="images/creative2.png" width="100px" height="100px">
+      <p> Creative design for websites and mobile applications</p>
+    </div>
+</section>
+
+<section class="programming-language">
+  <h1>Programming language</h1>
+</section>
+
+  <!-- <iframe class="programming-language" src='https://my.spline.design/roomgirlworkingcopy-b1178caf65ee00659511eb755ac66266/'  width='80%' height='500px' scrolling="no" frameBorder="0"></iframe> -->
+  <div style="width: 100%;">
+         <div style="width: 60%; float: left">
+               <iframe class="programming-language" src='https://my.spline.design/roomgirlworkingcopy-b1178caf65ee00659511eb755ac66266/'  width='100%' height='500px' scrolling="no" frameBorder="0"></iframe>
+         </div>
+         <div style="margin-left: 40%">
+         </div>
+     </div>
+
+
+
+<!-- JavaScript for Toggle Menu --->
+<script>
+
+  var navLinks = document.getElementById("navLinks");
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+
+</body>
+</html>
