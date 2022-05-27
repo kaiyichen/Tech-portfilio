@@ -293,22 +293,23 @@ h1{
 .project-popup .proj-details img{
   position: fixed;
   margin-left: -25%;
-  margin-top: 15px;
+  margin-top: 10px;
   width: 55%;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
 }
 .project-popup .proj-explain img{
   position: absolute;
-  right: 50px;
+  right: 20px;
   bottom: 20px;
   border: none;
   width: 50px;
   border-radius: 10%;
 }
 .project-popup h2{
-  height: 70%;
+  height: 65%;
   padding-top: 30px;
   padding-right: 30px;
+  padding-bottom:5px;
   position: fixed;
   left: 40%;
   font-size: 25px;

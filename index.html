@@ -104,7 +104,7 @@
         <img src="images/imbd.png">
         <div class="project-explain">
           <h3>Boardgame</h3>
-          <button type = "button"  class="learn-more-button">Learn More</button>
+          <button type = "button"  class="learn-more-button" onclick="openBoardPopup()">Learn More</button>
         </div>
       </div>
     </div>
@@ -113,7 +113,7 @@
         <img src="images/todo.png">
         <div class="project-explain">
           <h3>DukeTime</h3>
-          <button type = "button"  class="learn-more-button">Learn More</button>
+          <button type = "button"  class="learn-more-button" onclick="openDukePopup()">Learn More</button>
         </div>
       </div>
     </div>
@@ -123,24 +123,70 @@
       <button type="button" class='close-button' aria-label="Close alert" onclick="closeLinkedOutPopup()">
         <span aria-hidden="true">&times;</span>
       </button>
-        <img src="images/linkedout.png">
+        <a href="https://github.com/AY2122S2-CS2103T-T09-2/tp/releases/tag/v1.4" target="_blank"> <img src="images/linkedout.png"></a>
         <div class ='proj-container'>
           <div class="proj-details">
             <img src="images/linkedout-p1.jpg">
           </div>
           <div class="proj-explain" scrolling="no">
-            <h2> LinkedOUT is the only application that any experienced recruiter needs. It allows recruiters to keep track of many applicants, and the job they applied for. You can store their contact details, skills and the round of their application, all in one place.</h2>
+            <h2> LinkedOUT is the only application that any experienced recruiter needs. It allows recruiters to keep track of many applicants, and the job they applied for. You can store their contact details, skills and the round of their application, all in one place. LinkedOUT comes with a Command Line Interface CLI as well as a Graphical User Interface GUI in order to provide recruiters a more streamlined experience.</h2>
             <a href="https://github.com/AY2122S2-CS2103T-T09-2/tp" target="_blank"> <img src="images/github1.png"></a>
           </div>
         </div>
     </div>
 
+
     <div class="blocker" id="blocker2" onclick="closeFeeddoPopup()"></div>
     <div class="project-popup" id="feeddo-popup">
-      <img src="images/feeddo.png">
-      <h2>this is feeddo</h2>
-      <p> bla bla bla</p>
-      <button type="button" onclick="closeFeeddoPopup()">Close</button>
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeFeeddoPopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <a href="https://drive.google.com/file/d/1bQtM6W8IvAPmLu1YUner48l3UWxRk7gX/view?usp=sharing" target="_blank"> <img src="images/feeddo.png"></a>
+        <div class ='proj-container'>
+          <div class="proj-details">
+            <img src="images/feeddo-p1.png">
+          </div>
+          <div class="proj-explain" scrolling="no">
+            <h2> FEEDDO - Feed with Todo , is a mobile application that drives users to maintain a work life balance by introducing pets that will behave according to how close the users are to achieving their target balanced life. <br><br>
+              Users will get to set their weekly goals and view their progress in the dashboard page. In order to achieve a higher balance level, users will have to plan their time wisely by dropping down todos according to categories. They will be able to view their daily schedule at the schedule page. <br><br>
+            </h2>
+            <a href="https://docs.google.com/document/d/1zLRADUTn036g5QJ1oltxHVyQLyzBQVFprIIPMSsWFvs/edit?usp=sharing" target="_blank"> <img src="images/googledoc.png"></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="blocker" id="blocker3" onclick="closeBoardPopup()"></div>
+    <div class="project-popup" id="boardgame-popup">
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeBoardPopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <a href="https://kaiyichen.github.io/1MDB/mainboard.html" target="_blank"> <img src="images/imbd.png"></a>
+        <div class ='proj-container'>
+          <div class="proj-details">
+            <img src="images/1mbd-1.png">
+          </div>
+          <div class="proj-explain" scrolling="no">
+            <h2> 1MBD was created for an orientation and it functions like the monopoly boardgame. Freshies will have to identity the culprit based on a storyline and the boardgame. This boardgame is created using HTML, CSS, Javascript along with a Figma prototype.</h2>
+            <a href="https://github.com/kaiyichen/1MDB" target="_blank"> <img src="images/github1.png"></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="blocker" id="blocker4" onclick="closeDukePopup()"></div>
+    <div class="project-popup" id="duke-popup">
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeDukePopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <a href="https://github.com/kaiyichen/ip/releases/tag/v3.2" target="_blank"> <img src="images/todo.png"></a>
+        <div class ='proj-container'>
+          <div class="proj-details">
+            <img src="images/todo-p1.png" style="height:500px; width:350px">
+          </div>
+          <div class="proj-explain" scrolling="no">
+            <h2> DukeTime is a todo app to allow users to keep track of their todos, deadlines and upcoming events. This is a project template for a greenfield Java project. It's named after the Java mascot Duke.</h2>
+            <a href="https://github.com/kaiyichen/ip" target="_blank"> <img src="images/github1.png"></a>
+          </div>
+        </div>
     </div>
   </section>
 
@@ -270,5 +316,32 @@ function closeFeeddoPopup(){
 }
 </script>
 
+<script>
+let boardgamepopup = document.getElementById("boardgame-popup");
+let blocker3 = document.getElementById("blocker3");
+
+function openBoardPopup(){
+  blocker3.classList.add("open-blocker");
+  boardgamepopup.classList.add("open-popup");
+}
+function closeBoardPopup(){
+  blocker3.classList.remove("open-blocker");
+  boardgamepopup.classList.remove("open-popup");
+}
+</script>
+
+<script>
+let dukepopup = document.getElementById("duke-popup");
+let blocker4 = document.getElementById("blocker4");
+
+function openDukePopup(){
+  blocker4.classList.add("open-blocker");
+  dukepopup.classList.add("open-popup");
+}
+function closeDukePopup(){
+  blocker4.classList.remove("open-blocker");
+  dukepopup.classList.remove("open-popup");
+}
+</script>
 </body>
 </html>
