@@ -29,8 +29,8 @@
       <a href="#home">HOME</a>
       <a href="#about_me">ABOUT</a>
       <a href="#projects">PAST PROJECTS</a>
-      <a href="">BLOG</a>
-      <a href="">CONTACT</a>
+      <a href="#blog">BLOG</a>
+      <a href="#contactme">CONTACT</a>
     <i class="fa fa-bars" onclick="showMenu()"></i>
   </nav>
 </div>
@@ -88,7 +88,7 @@
         <img src="images/linkedout.png">
         <div class="project-explain">
           <h3>LinkedOUT</h3>
-          <button type = "button"  class="learn-more-button">Learn More</button>
+          <button type = "button"  class="learn-more-button" onclick="openLinkedOutPopup()">Learn More</button>
         </div>
       </div>
 
@@ -96,7 +96,7 @@
         <img src="images/feeddo.png">
         <div class="project-explain">
           <h3>Feeddo</h3>
-          <button type = "button"  class="learn-more-button">Learn More</button>
+          <button type = "button"  class="learn-more-button" onclick="openFeeddoPopup()">Learn More</button>
         </div>
       </div>
 
@@ -117,8 +117,24 @@
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="blocker" id="blocker1" onclick="closeLinkedOutPopup()"></div>
+    <div class="project-popup" id="linkedout-popup">
+        <img src="images/linkedout.png">
+        <h2>this is linkedout</h2>
+        <p> bla bla bla</p>
+        <button tupe="button" onclick="closeLinkedOutPopup()">Close</button>
+    </div>
+
+    <div class="blocker" id="blocker2" onclick="closeFeeddoPopup()"></div>
+    <div class="project-popup" id="feeddo-popup">
+      <img src="images/feeddo.png">
+      <h2>this is feeddo</h2>
+      <p> bla bla bla</p>
+      <button tupe="button" onclick="closeFeeddoPopup()">Close</button>
+    </div>
   </section>
+
 
 
   <section class="blog" id="blog">
@@ -178,9 +194,6 @@
   </div>
   </section>
 
-
-  <!-- projects -->
-
   <section class="contactme" id="contactme">
     <h1>Contact me</h1>
   </section>
@@ -216,6 +229,36 @@ function scrollFunction() {
     navLinks.style.right = "-200px";
   }
 
+</script>
+
+<!-- JavaScript for Project Popup -->
+<script>
+let linkedoutpopup = document.getElementById("linkedout-popup");
+let blocker1 = document.getElementById("blocker1");
+
+function openLinkedOutPopup(){
+  blocker1.classList.add("open-blocker");
+  linkedoutpopup.classList.add("open-popup");
+
+}
+function closeLinkedOutPopup(){
+  blocker1.classList.remove("open-blocker");
+  linkedoutpopup.classList.remove("open-popup");
+}
+</script>
+
+<script>
+let feeddopopup = document.getElementById("feeddo-popup");
+let blocker2 = document.getElementById("blocker2");
+
+function openFeeddoPopup(){
+  blocker2.classList.add("open-blocker");
+  feeddopopup.classList.add("open-popup");
+}
+function closeFeeddoPopup(){
+  blocker2.classList.remove("open-blocker");
+  feeddopopup.classList.remove("open-popup");
+}
 </script>
 
 </body>

@@ -237,6 +237,7 @@ h1{
 }
 .project-explain:hover .learn-more-button {
   background-color: #fff;
+  border-radius: 5px;
   border: none;
   color: #548796;
   padding: 16px 32px;
@@ -252,11 +253,71 @@ h1{
 }
 .project-explain:hover .learn-more-button:hover {
   background-color: #548796;
+  border-radius: 5px;
   color: white;
   opacity: 1;
 }
+.project-popup {
+  width: 60%;
+  background: black;
+  border-radius: 6px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding:0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: 0.4s, top: 0.4s;
+  z-index: 9;
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+  transition: 0.5s;
+}
+.project-popup img{
+  width: 100px;
+  margin-top: -50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.project-popup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.project-popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border:0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 
+}
 
+.blocker {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: ' ';
+  background: rgba(0,0,0,.5);
+}
+.open-blocker {
+    visibility: visible;
+    transition: 0.5s;
+  }
+  
 .section-break {
   background-color: transparent;
   border: 0;
