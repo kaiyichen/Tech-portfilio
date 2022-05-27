@@ -258,8 +258,9 @@ h1{
   opacity: 1;
 }
 .project-popup {
-  width: 60%;
-  background: black;
+  width: 50%;
+  height: 60%;
+  background: #1F1F1E;
   border-radius: 6px;
   position: fixed;
   top: 0;
@@ -267,7 +268,7 @@ h1{
   transform: translate(-50%,-50%) scale(0.1);
   text-align: center;
   padding:0 30px 30px;
-  color: #333;
+  color: rgb(206,214,224);
   visibility: hidden;
   transition: 0.4s, top: 0.4s;
   z-index: 9;
@@ -278,28 +279,53 @@ h1{
   transform: translate(-50%,-50%) scale(1);
   transition: 0.5s;
 }
+.proj-container{
+  display: flex;
+  overflow: hidden;
+}
 .project-popup img{
-  width: 100px;
+  width: 15%;
   margin-top: -50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border: 7px solid #fff;
+  z-index: 1;
+}
+.project-popup .proj-details img{
+  position: fixed;
+  margin-left: -25%;
+  margin-top: 15px;
+  width: 55%;
+  border: 2px solid #fff;
+}
+.project-popup .proj-explain img{
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  border: none;
+  width: 50px;
+  border-radius: 10%;
 }
 .project-popup h2{
-  font-size: 38px;
+  height: 70%;
+  padding-top: 30px;
+  padding-right: 30px;
+  position: fixed;
+  left: 40%;
+  font-size: 25px;
   font-weight: 500;
-  margin: 30px 0 10px;
+  overflow: scroll;
+}
+.project-popup ::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
 .project-popup button{
-  width: 100%;
-  margin-top: 50px;
-  padding: 10px 0;
-  background: #6fd649;
+  position: fixed;
+  right: 3%;
+  background: transparent;
   color: #fff;
-  border:0;
-  outline: none;
-  font-size: 18px;
-  border-radius: 4px;
+  font-size: 50px;
   cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  border: none;
 
 }
 
@@ -312,12 +338,13 @@ h1{
   right: 0;
   content: ' ';
   background: rgba(0,0,0,.5);
+  z-index: 5;
 }
 .open-blocker {
     visibility: visible;
     transition: 0.5s;
   }
-  
+
 .section-break {
   background-color: transparent;
   border: 0;

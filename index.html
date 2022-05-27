@@ -120,10 +120,19 @@
 
     <div class="blocker" id="blocker1" onclick="closeLinkedOutPopup()"></div>
     <div class="project-popup" id="linkedout-popup">
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeLinkedOutPopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
         <img src="images/linkedout.png">
-        <h2>this is linkedout</h2>
-        <p> bla bla bla</p>
-        <button tupe="button" onclick="closeLinkedOutPopup()">Close</button>
+        <div class ='proj-container'>
+          <div class="proj-details">
+            <img src="images/linkedout-p1.jpg">
+          </div>
+          <div class="proj-explain" scrolling="no">
+            <h2> LinkedOUT is the only application that any experienced recruiter needs. It allows recruiters to keep track of many applicants, and the job they applied for. You can store their contact details, skills and the round of their application, all in one place.</h2>
+            <a href="https://github.com/AY2122S2-CS2103T-T09-2/tp" target="_blank"> <img src="images/github1.png"></a>
+          </div>
+        </div>
     </div>
 
     <div class="blocker" id="blocker2" onclick="closeFeeddoPopup()"></div>
@@ -131,7 +140,7 @@
       <img src="images/feeddo.png">
       <h2>this is feeddo</h2>
       <p> bla bla bla</p>
-      <button tupe="button" onclick="closeFeeddoPopup()">Close</button>
+      <button type="button" onclick="closeFeeddoPopup()">Close</button>
     </div>
   </section>
 
