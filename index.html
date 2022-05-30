@@ -39,10 +39,17 @@
 <div class="content">
 <!-- About me -->
   <section class="about-me" id="about_me">
-    <h1>About me</h1>
-    <p> I am an undergraduate Computer Science student in National University of Singapore </p>
+    <div style="width: 100%;" position="center">
+      <div class="avatar">
+        <img src="images/cky.jpg" alt="Avatar">
+      </div>
+      <div class = "profile">
+        <h1>About me</h1>
+        <p> I am an undergraduate Computer Science student in National University of Singapore </p>
+      </div>
+    </div>
 
-    <div class="row">
+    <div class="about-row">
       <div class ="about-me-col">
         <h3> Analytical Thinking </h3>
         <img src="images/analytical.png" width="100px" height="100px">
@@ -60,6 +67,7 @@
         <img src="images/creative2.png" width="100px" height="100px">
         <p> Creative design for websites and mobile applications</p>
       </div>
+    </div>
   </section>
 
   <section class="programming-language">
@@ -197,62 +205,154 @@
     <h3>My Experience</h3>
 
     <div class="timeline">
-    <div class="container left">
+    <div class="container left" onclick="openBakePopup()">
       <div class="content">
         <h2>Sep 2019 - June 2020</h2>
         <p>Completed Diploma in Baking</p>
       </div>
+
+      <!-- explain blog container -->
+      <div class="blog-right" id="baking-blog-right" scrolling="no">
+        <h4>Diploma in Baking @ Royal Baking Academy</h4>
+        <img src="images/baking-1.jpg" style="height:200px">
+        <img src="images/baking-7.jpg" style="height:200px">
+        <img src="images/baking-6.jpg" style="height:200px">
+        <img src="images/baking-10.jpg" style="height:200px">
+        <img src="images/baking-4.jpg" style="height:200px">
+        <img src="images/baking-11.jpg" style="height:200px">
+        <img src="images/baking-2.jpg" style="height:200px">
+        <img src="images/baking-8.jpg" style="height:200px">
+        <img src="images/baking-9.jpg" style="height:200px">
+        <img src="images/baking-3.jpg" style="height:200px">
+      </div>
     </div>
 
-    <div class="container right">
+    <div class="container right-normal">
       <div class="content">
         <h2>Aug 2020</h2>
         <p>Year 1 Computer Science undergraduate in NUS</p>
       </div>
     </div>
 
-    <div class="container left">
+    <div class="container left" onclick="openShopeePopup()">
       <div class="content">
         <h2>Dec 2020 - Jan 2021</h2>
         <p> Shopee Product & Design Challenge 2021</p>
       </div>
+
+      <!-- explain blog container -->
+      <div class="blog-right" id="shopee-blog-right" scrolling="no">
+        <h4>Shopee Product & Design Challenge 2021</h4>
+        <img src="images/shopee-fit.jpg" style="height:250px">
+        <p>Shopee Product & Design case competition that focus on Product Management & UI / UX Design to come out with ideas on creating an ultimate feature for the Shopee app.</p>
+      </div>
     </div>
 
-    <div class="container right">
+    <div class="container right" onclick="openOrbitalPopup()">
       <div class="content">
         <h2>May 2021 - Aug 2021</h2>
         <p>Independent Software Development Project</p>
       </div>
+      <!-- explain blog container -->
+      <div class="blog-left" id="orbital-blog-left" scrolling="no">
+        <h4>Independent Software Development Project (Orbital)</h4>
+        <img src="images/orbital.jpg" style="height:200px">
+        <p>Orbital (a.k.a., CP2106: Independent Software Development Project) is the School of Computing’s 1st year summer self-directed, independent work course. This programme gives students the opportunity to pick up software development skills on their own, using sources on the web.</p>
+      </div>
     </div>
 
-    <div class="container left">
+    <div class="container left-normal">
       <div class="content">
         <h2>Aug 2021</h2>
         <p>Year 2 Computer Science undergraduate in NUS</p>
       </div>
     </div>
 
-  <div class="container right">
+  <div class="container right" onclick="openHackPopup()">
     <div class="content">
       <h2>Jan 2022</h2>
       <p>Hack n Roll 2022</p>
     </div>
-  </div>
 
-  <div class="container left">
-    <div class="content">
-      <h2>Mar 2022 - Aug 2022</h2>
-      <p>Medical Grant Challenge 2022</p>
+    <!-- explain blog container -->
+    <div class="blog-left" id="hack-blog-left" scrolling="no">
+      <h4>Hack n Roll 2022</h4>
+      <img src="images/hacknroll.png" style="height:200px">
+      <p>Hack&Roll is NUS Hackers' annual 24-hour hackathon, and the largest student-run hackathon in Singapore. Our team had created a telegram bot which converts images into sticker using face detection</p>
     </div>
   </div>
 
+  <div class="container left" onclick="openMGCPopup()">
+    <div class="content">
+      <h2>Mar 2022 - Aug 2022</h2>
+      <p>Medical Grand Challenge 2022</p>
+    </div>
+  <!-- explain blog container -->
+  <div class="blog-right" id="MGC-blog-right" scrolling="no">
+    <h4>Medical Grand Challenge 2022</h4>
+    <img src="images/mgc.png" style="height:250px">
+    <p>MGC is an annual competition where young innovators from various faculties come together to address unmet healthcare needs through creating innovative medical technologies.</p>
+  </div>
+
+  </div>
   </div>
   </section>
 
-  <section class="contactme" id="contactme">
-    <h1>Contact me</h1>
+  <section class="blog-explain">
+    <div class="blogblocker" id="blocker5" onclick="closeBakePopup()"></div>
+    <div class="blog-popup" id="baking-popup" >
+      <h2>Baking Portfolio</h2>
+      <img src="images/baking-1.jpg" style="height:350px">
+      <img src="images/baking-7.jpg" style="height:350px">
+      <img src="images/baking-11.jpg" style="height:350px">
+      <img src="images/baking-4.jpg" style="height:350px">
+      <img src="images/baking-2.jpg" style="height:350px">
+      <img src="images/baking-6.jpg" style="height:350px">
+      <img src="images/baking-9.jpg" style="height:350px">
+      <img src="images/baking-3.jpg" style="height:350px">
+      <a href="https://docs.google.com/presentation/d/10AjXgcvTNfaK8HIvtnw5-avdA3Va5A0Y/edit?usp=sharing&ouid=114861993382927760010&rtpof=true&sd=true" target="_blank" class= blog-popup-button> Learn more about my baking life</a>
+    </div>
+
+    <div class="blogblocker" id="blocker7" onclick="closeShopeePopup()"></div>
+    <div class="blog-popup" id="shopee-popup" >
+      <h2>Shopee Product & Design 2021</h2>
+      <img src="images/shopee-fit.jpg" style="height:350px">
+      <p>Shopee Product & Design case competition that focus on Product Management & UI / UX Design to come out with ideas on creating an ultimate feature for the Shopee app.</p>
+    </div>
+
+    <div class="blogblocker" id="blocker8" onclick="closeOrbitalPopup()"></div>
+    <div class="blog-popup" id="orbital-popup" >
+      <h2>CP2106 Independent Software Development Project (Orbital)</h2>
+      <img src="images/orbital.jpg" style="height:350px">
+      <p>Orbital (a.k.a., CP2106: Independent Software Development Project) is the School of Computing’s 1st year summer self-directed, independent work course. This programme gives students the opportunity to pick up software development skills on their own, using sources on the web. Our team had created a work life balance X productivity android mobile application using Flutter.</p>
+      <a href="https://drive.google.com/file/d/1bQtM6W8IvAPmLu1YUner48l3UWxRk7gX/view?usp=sharing" target="_blank" class= blog-popup-button> Try the mobile application here</a>
+    </div>
+
+    <div class="blogblocker" id="blocker9" onclick="closeHackPopup()"></div>
+    <div class="blog-popup" id="hack-popup" >
+      <h2>Hack n Roll 2022</h2>
+      <img src="images/hacknroll.png" style="height:350px">
+      <p>Hack&Roll is NUS Hackers' annual 24-hour hackathon, and the largest student-run hackathon in Singapore. Our team had created a telegram bot which converts images into sticker using face detection</p>
+      <a href="http://t.me/EasyFacesBot" target="_blank" class= blog-popup-button> Try the telegram bot here</a>
+    </div>
+
+    <div class="blogblocker" id="blocker10" onclick="closeMGCPopup()"></div>
+    <div class="blog-popup" id="MGC-popup">
+      <h2>Medical Grand Challenge 2022</h2>
+      <img src="images/MGC.png" style="height:350px">
+      <p>MGC is an annual competition where young innovators from various faculties come together to address unmet healthcare needs through creating innovative medical technologies.</p>
+    </div>
   </section>
 </div>
+
+<section class="contactme" id="contactme">
+  <h1>Contact me</h1>
+  <h2> Feel free to contact me if you have a question or want to work together </h2>
+  <a href = "mailto: chenkaiyi01@gmail.com" target="_blank"> <img src="images/email.png" style="width:60px"></a>
+  <a href="https://github.com/kaiyichen" target="_blank"> <img src="images/github-.png" style="width:60px"></a>
+  <a href="https://www.linkedin.com/in/kai-yi-chen-92a706211/" target="_blank"> <img src="images/linkedin.png" style="width:60px"></a>
+
+</section>
 
 <!-- JavaScript for navigation bar -->
 <script>
@@ -341,6 +441,82 @@ function openDukePopup(){
 function closeDukePopup(){
   blocker4.classList.remove("open-blocker");
   dukepopup.classList.remove("open-popup");
+}
+</script>
+
+<!-- blog script -->
+<script>
+let bakingblog = document.getElementById("baking-popup");
+let bakingblogright = document.getElementById("baking-blog-right");
+let blocker5 = document.getElementById("blocker5");
+
+function openBakePopup(){
+  blocker5.classList.add("open-blog-blocker");
+  bakingblog.classList.add("blog-open-popup");
+}
+function closeBakePopup(){
+  blocker5.classList.remove("open-blog-blocker");
+  bakingblog.classList.remove("blog-open-popup");
+}
+</script>
+
+<script>
+let shopeeblog = document.getElementById("shopee-popup");
+let shopeeblogright = document.getElementById("shopee-blog-right");
+let blocker7 = document.getElementById("blocker7");
+
+function openShopeePopup(){
+  blocker7.classList.add("open-blog-blocker");
+  shopeeblog.classList.add("blog-open-popup");
+}
+function closeShopeePopup(){
+  blocker7.classList.remove("open-blog-blocker");
+  shopeeblog.classList.remove("blog-open-popup");
+}
+</script>
+
+<script>
+let orbitalblog = document.getElementById("orbital-popup");
+let orbitalblogright = document.getElementById("orbital-blog-left");
+let blocker8 = document.getElementById("blocker8");
+
+function openOrbitalPopup(){
+  blocker8.classList.add("open-blog-blocker");
+  orbitalblog.classList.add("blog-open-popup");
+}
+function closeOrbitalPopup(){
+  blocker8.classList.remove("open-blog-blocker");
+  orbitalblog.classList.remove("blog-open-popup");
+}
+</script>
+
+<script>
+let hackblog = document.getElementById("hack-popup");
+let hackblogright = document.getElementById("hack-blog-left");
+let blocker9 = document.getElementById("blocker9");
+
+function openHackPopup(){
+  blocker9.classList.add("open-blog-blocker");
+  hackblog.classList.add("blog-open-popup");
+}
+function closeHackPopup(){
+  blocker9.classList.remove("open-blog-blocker");
+  hackblog.classList.remove("blog-open-popup");
+}
+</script>
+
+<script>
+let mgcblog = document.getElementById("MGC-popup");
+let mgcblogright = document.getElementById("MGC-blog-left");
+let blocker10 = document.getElementById("blocker10");
+
+function openMGCPopup(){
+  blocker10.classList.add("open-blog-blocker");
+  mgcblog.classList.add("blog-open-popup");
+}
+function closeMGCPopup(){
+  blocker10.classList.remove("open-blog-blocker");
+  mgcblog.classList.remove("blog-open-popup");
 }
 </script>
 </body>
