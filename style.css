@@ -339,6 +339,17 @@ h1{
   width: 50px;
   border-radius: 10%;
 }
+.row-proj{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.col-proj{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom:5%;
+  padding:20px 12px;
+}
 .project-popup h2{
   height: 65%;
   padding-top: 30px;
@@ -363,6 +374,40 @@ h1{
   border: none;
 
 }
+
+.view-more {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.view-more span{
+  font-weight: 300;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: underline;
+}
+.view-more .view-more-btn {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  right: 25%;
+  bottom: 45%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 1;
+
+}
+.view-more .view-more-btn:hover {
+  padding-right: 10px;
+  padding-left:8px;
+}
+
+
 
 .blocker {
   visibility: hidden;

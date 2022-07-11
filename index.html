@@ -115,12 +115,39 @@
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="project-col">
         <img src="images/todo.png">
         <div class="project-explain">
           <h3>DukeTime</h3>
           <button type = "button"  class="learn-more-button" onclick="openDukePopup()">Learn More</button>
+        </div>
+      </div>
+
+      <div class="project-col">
+        <img src="images/ecomm.jpg">
+        <div class="project-explain">
+          <h3>E-commerce fashion site</h3>
+          <button type = "button"  class="learn-more-button" onclick="openEcommPopup()">Learn More</button>
+        </div>
+      </div>
+
+      <div class="project-col">
+        <img src="images/ecomm-stat.jpg">
+        <div class="project-explain">
+          <h3>E-commerce static site</h3>
+          <button type = "button"  class="learn-more-button" onclick="openEcommStatPopup()">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="project-col">
+        <img src="images/fundfood1.jpg">
+        <div class="project-explain">
+          <h3>FundFood</h3>
+          <button type = "button"  class="learn-more-button" onclick="openFundFoodPopup()">Learn More</button>
         </div>
       </div>
     </div>
@@ -195,6 +222,70 @@
           </div>
         </div>
     </div>
+
+    <div class="blocker" id="blocker5" onclick="closeEcommPopup()"></div>
+    <div class="project-popup" id="ecomm-popup">
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeEcommPopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <a href="https://kaiyichen.github.io/E-commerce/index.html" target="_blank"> <img src="images/ecomm.jpg"></a>
+        <div class ='proj-container'>
+          <div class="proj-details">
+            <img src="images/ecomm-1.jpg" style="height:300px; width:500px">
+          </div>
+          <div class="proj-explain" scrolling="no">
+            <h2> E-commerce fashion site is a webpage which features fashion products from Cotton On, H&M and Zara. The webpage comes with a functioning add to cart page and it is built using HTML, CSS and JavaScript.</h2>
+            <div class="view-more">
+              <a href="https://kaiyichen.github.io/E-commerce/index.html" class="view-more-btn" target="_blank"><span>View it here</span></a>
+            </div>
+            <a href="https://github.com/kaiyichen/E-commerce" target="_blank"> <img src="images/github1.png"></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="blocker" id="blocker6" onclick="closeEcommStatPopup()"></div>
+    <div class="project-popup" id="ecomm-stat-popup">
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeEcommStatPopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <a href="https://kaiyichen.github.io/Website-E-Commerce/index.html" target="_blank"> <img src="images/ecomm-stat.jpg"></a>
+        <div class ='proj-container'>
+          <div class="proj-details">
+            <img src="images/ecomm-stat-1.jpg" style="height:300px; width:500px">
+          </div>
+          <div class="proj-explain" scrolling="no">
+            <h2> E-commerce static site is a webpage which features merchandise products. The webpage is built using HTML, Tailwind CSS, CSS and JavaScript.</h2>
+            <div class="view-more">
+              <a href="https://kaiyichen.github.io/Website-E-Commerce/index.html" class="view-more-btn" target="_blank"><span>View it here</span></a>
+            </div>
+            <a href="https://github.com/kaiyichen/Website-E-Commerce" target="_blank"> <img src="images/github1.png"></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="blocker" id="blocker7" onclick="closeFundFoodPopup()"></div>
+    <div class="project-popup" id="fundfood-popup">
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeFundFoodPopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <a href="https://kaiyichen.github.io/LifeHack/" target="_blank"> <img src="images/fundfood1.jpg"></a>
+        <div class ='proj-container'>
+          <div class="proj-details">
+            <img src="images/fundfood2.jpg" style="height:300px; width:500px">
+          </div>
+          <div class="proj-explain">
+            <h2> FundFood is a simple marketplace app that allows users to transact their unwanted/expired food. Users can sell their unwanted food at a lower price or even for free! We aim to reduce both food wastage in Singapore and food shortage in underprivileged countries. </h2>
+            <div class="view-more">
+              <a href="https://kaiyichen.github.io/LifeHack/" class="view-more-btn" target="_blank"><span>View it here</span></a>
+            </div>
+
+            <div><a href="https://devpost.com/software/fundfood?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank"> <img src="images/devpost.png" style="width: 100px; margin-right:80px; margin-bottom: 10px"></a></div>
+            <div><a href="https://github.com/kaiyichen/LifeHack" target="_blank"> <img src="images/github1.png"></a></div>       
+
+          </div>
+        </div>
+    </div>
+
   </section>
 
 
@@ -293,6 +384,21 @@
     </div>
   </div>
 
+  <div class="container right" onclick="openLifeHackPopup()">
+    <div class="content">
+      <h2>July 2022</h2>
+      <p>LifeHack 2022</p>
+    </div>
+    <!-- explain blog container -->
+    <div class="blog-left" id="lifehack-blog-left" scrolling="no">
+      <h4>LifeHack2022</h4>
+      <img src="images/lifehack.jpg" style="height:200px">
+      <p>LifeHack 2022 is a hackathon aimed to channel the creativity, drive, and skills of the participants in the software development field. <br><br> Our team had developed a webpage (FundFood) that provides solution for food wastage in Singapore. FundFood is a simple marketplace app that allows users to transact their unwanted/expired food. Users can sell their unwanted food at a lower price or even for free! We aim to reduce both food wastage in Singapore and food shortage in underprivileged countries.
+        <br> <br> To start, users can input their unwanted food into a form, which will then be logged onto the marketplace for everybody to see. Users can scroll to the marketplace to see whether they see another unused food in which they are interested in (to eat or to recycle) and can contact the user directly to manage the transaction.   
+        On top of that, we will have a logging system to log the amount of food waste saved. Profits from the government's funding and the webpage service will be donated to underprivileged families with food shortages.</p>
+    </div>
+  </div>
+
   </div>
   </section>
 
@@ -332,6 +438,8 @@
       <img src="images/hacknroll.png" style="height:350px">
       <p>Hack&Roll is NUS Hackers' annual 24-hour hackathon, and the largest student-run hackathon in Singapore. Our team had created a telegram bot which converts images into sticker using face detection</p>
       <a href="http://t.me/EasyFacesBot" target="_blank" class= blog-popup-button> Try the telegram bot here</a>
+
+      <div><a href="https://devpost.com/software/easyfacesbot" target="_blank"> <img src="images/devpost.png" style="width: 150px; float: right; padding-bottom: 20px;  padding-right:10px"></a></div>
     </div>
 
     <div class="blogblocker" id="blocker10" onclick="closeMGCPopup()"></div>
@@ -339,6 +447,19 @@
       <h2>Medical Grand Challenge 2022</h2>
       <img src="images/mgc.png" style="height:350px">
       <p>MGC is an annual competition where young innovators from various faculties come together to address unmet healthcare needs through creating innovative medical technologies.</p>
+    </div>
+
+    <div class="blogblocker" id="blocker11" onclick="closeLifeHackPopup()"></div>
+    <div class="blog-popup" id="lifehack-popup" >
+      <h2>LifeHack 2022</h2>
+      <img src="images/fundfood.jpg" style="height:350px">
+      <p>LifeHack 2022 is a hackathon aimed to channel the creativity, drive, and skills of the participants in the software development field. <br><br> Our team had developed a webpage (FundFood) that provides solution for food wastage in Singapore. FundFood is a simple marketplace app that allows users to transact their unwanted/expired food. Users can sell their unwanted food at a lower price or even for free! We aim to reduce both food wastage in Singapore and food shortage in underprivileged countries.
+        <br> <br> To start, users can input their unwanted food into a form, which will then be logged onto the marketplace for everybody to see. Users can scroll to the marketplace to see whether they see another unused food in which they are interested in (to eat or to recycle) and can contact the user directly to manage the transaction.   
+        On top of that, we will have a logging system to log the amount of food waste saved. Profits from the government's funding and the webpage service will be donated to underprivileged families with food shortages.</p>
+      <a href="https://kaiyichen.github.io/LifeHack/" target="_blank" class= blog-popup-button> Take a look at the website here</a>
+
+      <div><a href="https://devpost.com/software/fundfood?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank"> <img src="images/devpost.png" style="width: 150px; float: right; padding-bottom: 20px;  padding-right:10px"></a></div>
+
     </div>
   </section>
 </div>
@@ -443,6 +564,48 @@ function closeDukePopup(){
 }
 </script>
 
+<script>
+  let ecommpopup = document.getElementById("ecomm-popup");
+  let blocker5 = document.getElementById("blocker5");
+  
+  function openEcommPopup(){
+    blocker5.classList.add("open-blocker");
+    ecommpopup.classList.add("open-popup");
+  }
+  function closeEcommPopup(){
+    blocker5.classList.remove("open-blocker");
+    ecommpopup.classList.remove("open-popup");
+  }
+</script>
+
+<script>
+  let ecommstatpopup = document.getElementById("ecomm-stat-popup");
+  let blocker6 = document.getElementById("blocker6");
+  
+  function openEcommStatPopup(){
+    blocker6.classList.add("open-blocker");
+    ecommstatpopup.classList.add("open-popup");
+  }
+  function closeEcommStatPopup(){
+    blocker6.classList.remove("open-blocker");
+    ecommstatpopup.classList.remove("open-popup");
+  }
+</script>
+
+<script>
+  let fundfoodpopup = document.getElementById("fundfood-popup");
+  let blocker7 = document.getElementById("blocker7");
+  
+  function openFundFoodPopup(){
+    blocker7.classList.add("open-blocker");
+    fundfoodpopup.classList.add("open-popup");
+  }
+  function closeFundFoodPopup(){
+    blocker7.classList.remove("open-blocker");
+    fundfoodpopup.classList.remove("open-popup");
+  }
+</script>
+
 <!-- blog script -->
 <script>
 let bakingblog = document.getElementById("baking-popup");
@@ -518,5 +681,20 @@ function closeMGCPopup(){
   mgcblog.classList.remove("blog-open-popup");
 }
 </script>
+
+<script>
+  let lifehackblog = document.getElementById("lifehack-popup");
+  let lifehackblogright = document.getElementById("lifehack-blog-left");
+  let blocker11 = document.getElementById("blocker11");
+  
+  function openLifeHackPopup(){
+    blocker11.classList.add("open-blog-blocker");
+    lifehackblog.classList.add("blog-open-popup");
+  }
+  function closeLifeHackPopup(){
+    blocker11.classList.remove("open-blog-blocker");
+    lifehackblog.classList.remove("blog-open-popup");
+  }
+  </script>
 </body>
 </html>
