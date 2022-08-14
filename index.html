@@ -421,6 +421,20 @@
     </div>
   </div>
 
+  <div class="container left" onclick="openSIAPopup()">
+    <div class="content">
+      <h2>July-Aug 2022</h2>
+      <p>Singapore Airlines AppChallenge 2022</p>
+    </div>
+    <!-- explain blog container -->
+    <div class="blog-right" id="sia-blog-left" scrolling="no">
+      <h4>Singapore Airline AppChallenge 2022</h4>
+      <img src="images/sia.png" style="height:200px">
+      <p>Singapore Airlines AppChallenge is a leading digital innovation challenge for Aviation & Travel
+        <br><br>Ongoing project - shortlisted for finalist team </p>
+    </div>
+  </div>
+
   </div>
   </section>
 
@@ -482,6 +496,15 @@
 
       <div><a href="https://devpost.com/software/fundfood?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank"> <img src="images/devpost.png" style="width: 150px; float: right; padding-bottom: 20px;  padding-right:10px"></a></div>
 
+    </div>
+
+    <div class="blogblocker" id="blocker12" onclick="closeSIAPopup()"></div>
+    <div class="blog-popup" id="sia-popup" >
+      <h2>Singapore Airlines AppChallenge 2022</h2>
+      <img src="images/sia.png" style="height:350px">
+      <p>Singapore Airlines AppChallenge is a leading digital innovation challenge for Aviation & Travel
+        <br><br> Ongoing project - shortlisted for finalist team
+      </p>
     </div>
   </section>
 </div>
@@ -716,6 +739,21 @@ function closeMGCPopup(){
   function closeLifeHackPopup(){
     blocker11.classList.remove("open-blog-blocker");
     lifehackblog.classList.remove("blog-open-popup");
+  }
+  </script>
+
+<script>
+  let siablog = document.getElementById("sia-popup");
+  let siablogright = document.getElementById("sia-blog-left");
+  let blocker12 = document.getElementById("blocker12");
+  
+  function openSIAPopup(){
+    blocker12.classList.add("open-blog-blocker");
+    siablog.classList.add("blog-open-popup");
+  }
+  function closeSIAPopup(){
+    blocker12.classList.remove("open-blog-blocker");
+    siablog.classList.remove("blog-open-popup");
   }
   </script>
 </body>
