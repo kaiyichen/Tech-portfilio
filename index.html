@@ -29,6 +29,7 @@
       <a href="#home">HOME</a>
       <a href="#about_me">ABOUT</a>
       <a href="#projects">PAST PROJECTS</a>
+      <a href="#awards">AWARDS</a>
       <a href="#blog">BLOG</a>
       <a href="#contactme">CONTACT</a>
     <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -310,7 +311,70 @@
 
   </section>
 
+  <section class = "awards" id="awards">
+    <h1>Awards</h1>
 
+    <div class="award-row">
+      <div class="award-col">
+        <div class = "award-explain" onclick="openMGCWINPopup()">
+          <img src="images/mgc.jpg">
+          <h3>Medical Grand Challenge 2022 (Open Category) - First Prize</h3>
+        </div>
+        
+      </div>
+      <div class="award-col">
+        <div class = "award-explain" onclick="openSIAWINPopup()">
+          <img src="images/sia_1.jpg">
+          <h3>Singapore Airlines AppChallenge 2022 - Second Prize</h3>
+        </div>  
+      </div>
+    </div>
+
+    <div class="blocker" id="blocker13" onclick="closeMGCWINPopup()"></div>
+    <div class="award-popup" id="mgcwin-popup">
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeMGCWINPopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <div class ='award-container'>
+          <img src="images/mgc_2.jpg">
+          <div class="award-explain">
+            <h2>
+              I participated in the Medical Grand Challenge(MGC) 2022 along with some Medicine, Pharmacist, and Business students. I am proud to announce that our team has received first place in the Open Category of the challenge among the local and international teams.
+
+              <br><br>MGC is an annual competition where young innovators from various faculties come together to address unmet healthcare needs through creating innovative medical technologies. 
+              
+              <br><br>Our team has come out with our product, STDetect which uses HeHealth's image recognition AI software and machine learning to tackle the issue of STDs. We aim to utilize technologies to provide anonymous, accessible, and affordable testing of STDs to reduce the spread of STDs. The image recognition AI provides STD pre-screening and recommends specific STD test kits for users as confirmatory diagnoses.
+            </h2>
+          </div>
+          <div class="award-view-more">
+              <a href="https://www.straitstimes.com/singapore/student-team-wins-20k-for-app-that-may-allow-sexual-disease-tests-to-be-done-from-home" class="award-view-more-btn" target="_blank"><span>View it here</span></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="blocker" id="blocker14" onclick="closeSIAWINPopup()"></div>
+    <div class="award-popup" id="siawin-popup">
+      <button type="button" class='close-button' aria-label="Close alert" onclick="closeSIAWINPopup()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        <div class ='award-container'>
+          <img src="images/sia_1.jpg">
+          <div class="award-explain">
+            <h2>
+              I participated in the Singapore Airlines AppChallenge 2022 - Tertiary Student Track as a solo group member. I am proud to announce that I have won the 2nd prize in spite of the tough competition between 116 local and international teams.
+
+<br><br>Among the 7 challenge categories, I participated in the Wildcard open category - which allows me to identify problems in the current Aviation & Travel industry and come out with a solution.
+
+<br><br>As a computer science student and a pet lover, I proposed the solution, Travel With Pet to address the current pet air travel anxiety using image + audio recognition AI.
+
+<br><br>Despite facing challenges with air travel policies and restrictions, I learned to integrate the latest AI and network technologies as I build the product. I also deepened my understanding of the business model to optimize Singapore Airlines' existing resources.
+            </h2>
+          </div>
+        </div>
+    </div>
+    </div>
+  </section>
 
   <section class="blog" id="blog">
     <h1>Blog</h1>
@@ -402,7 +466,8 @@
     <div class="blog-right" id="MGC-blog-right" scrolling="no">
       <h4>Medical Grand Challenge 2022</h4>
       <img src="images/mgc.png" style="height:250px">
-      <p>MGC is an annual competition where young innovators from various faculties come together to address unmet healthcare needs through creating innovative medical technologies.</p>
+      <p> Award: 1st prize Open Category
+        <br><br>MGC is an annual competition where young innovators from various faculties come together to address unmet healthcare needs through creating innovative medical technologies.</p>
     </div>
   </div>
 
@@ -430,8 +495,7 @@
     <div class="blog-right" id="sia-blog-left" scrolling="no">
       <h4>Singapore Airline AppChallenge 2022</h4>
       <img src="images/sia.png" style="height:200px">
-      <p>Singapore Airlines AppChallenge is a leading digital innovation challenge for Aviation & Travel
-        <br><br>Ongoing project - shortlisted for finalist team </p>
+      <p>Award: 2nd prize <br><br> Singapore Airlines AppChallenge is a leading digital innovation challenge for Aviation & Travel.  There are 14 Challenge Statements and 3 wildcard categories for student participants to choose from and the Singapore Airlines is on the lookout for creative and innovative solutions that can solve real-life business challenges, and redefine travel and fly.</p>
     </div>
   </div>
 
@@ -754,6 +818,34 @@ function closeMGCPopup(){
   function closeSIAPopup(){
     blocker12.classList.remove("open-blog-blocker");
     siablog.classList.remove("blog-open-popup");
+  }
+  </script>
+
+<script>
+  let mgcwinpopup = document.getElementById("mgcwin-popup");
+  let blocker13 = document.getElementById("blocker13");
+  
+  function openMGCWINPopup(){
+    blocker13.classList.add("open-blocker");
+    mgcwinpopup.classList.add("open-popup");
+  }
+  function closeMGCWINPopup(){
+    blocker13.classList.remove("open-blocker");
+    mgcwinpopup.classList.remove("open-popup");
+  }
+  </script>
+
+<script>
+  let siawinpopup = document.getElementById("siawin-popup");
+  let blocker14 = document.getElementById("blocker14");
+  
+  function openSIAWINPopup(){
+    blocker14.classList.add("open-blocker");
+    siawinpopup.classList.add("open-popup");
+  }
+  function closeSIAWINPopup(){
+    blocker14.classList.remove("open-blocker");
+    siawinpopup.classList.remove("open-popup");
   }
   </script>
 </body>
