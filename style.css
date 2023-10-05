@@ -278,7 +278,7 @@ h1{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.5s;
   cursor: pointer;
@@ -1120,7 +1120,7 @@ h3 {
     width: 0;
   }
   100% {
-    width: 65%;
+    width: 85%;
   }
 }
 
@@ -1129,7 +1129,7 @@ h3 {
     width: 0;
   }
   100% {
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -1157,4 +1157,22 @@ h3 {
   100% {
     opacity: 1;
   }
+}
+
+.tech-stack-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.category{
+  border-radius: 10px;
+  margin-bottom:5%;
+  padding:20px 12px;
+  flex-basis: calc(50% - 10px)
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
 }
